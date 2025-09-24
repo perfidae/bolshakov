@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LingaGu – Пекарі радять</title>
-  <!-- правильний шлях до css -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <!-- Header -->
   <header class="header">
     <div class="logo">
-      <img src="https://learn.logikaschool.com/uploads/student/3144138/68ce70d6acd72.png" alt="Логотип" class="logo-img">
+      <img src="https://learn.logikaschool.com/uploads/student/3144138/68ce70d6acd72.png" alt="Логотип LingaGu" class="logo-img">
       <span class="logo-text">LingaGu</span>
     </div>
     <a href="#" class="btn-discount">Знижки</a>
   </header>
 
-  <!-- Навігація -->
-  <nav class="nav">
+  <!-- Navigation -->
+  <nav class="nav" aria-label="Головна навігація">
     <a href="index.html" class="active">Пекарі радять</a>
     <a href="about.html">Про нас</a>
     <a href="#">Доставка</a>
@@ -28,49 +27,63 @@
   <!-- Основний контент -->
   <main>
     <h1>Пекарі радять</h1>
-    <section class="info">
+
+    <section class="info" aria-labelledby="recommended-heading">
+      <!-- картка 1 -->
       <article class="Linga">
         <h2>Веселе печиво</h2>
         <p>Дуже веселі</p>
-        <div style="text-align: center;">
-          <img src="https://learn.logikaschool.com/uploads/student/3144138/68ce732ed6e71.png" 
+        <div class="img-wrap">
+          <img src="https://learn.logikaschool.com/uploads/student/3144138/68ce732ed6e71.png"
                alt="Веселе печиво" width="300" height="250">
         </div>
         <a class="article-but" href="#">Купити та замовити</a>
       </article>
 
+      <!-- картка 2 -->
       <article class="Linga">
         <h2>Пряничні мужички</h2>
-        <img src="https://learn.logikaschool.com/uploads/student/3144138/68ce79f19e7d1.png" alt="Пряничні мужички" width="300" height="200">
+        <div class="img-wrap">
+          <img src="https://learn.logikaschool.com/uploads/student/3144138/68ce79f19e7d1.png" alt="Пряничні мужички" width="300" height="200">
+        </div>
         <p>Поговоримо про новинки</p>
         <a class="article-but" href="#">Детальніше</a>
       </article>
 
+      <!-- картка 3 -->
       <article class="Linga">
         <h2>Монстр печиво</h2>
-        <img src="https://learn.logikaschool.com/uploads/student/3144138/68ce7fcac0977.jpg" alt="Монстр печиво" width="300" height="200">
+        <div class="img-wrap">
+          <img src="https://learn.logikaschool.com/uploads/student/3144138/68ce7fcac0977.jpg" alt="Монстр печиво" width="300" height="200">
+        </div>
         <p>Супер монстр</p>
         <a class="article-but" href="#">Детальніше</a>
       </article>
 
+      <!-- картка 4 -->
       <article class="Linga">
         <h2>Різдвяне печиво</h2>
-        <img src="https://learn.logikaschool.com/uploads/student/3144138/68ce80d0b31c6.png" alt="Різдвяне печиво" width="300" height="200">
+        <div class="img-wrap">
+          <img src="https://learn.logikaschool.com/uploads/student/3144138/68ce80d0b31c6.png" alt="Різдвяне печиво" width="300" height="200">
+        </div>
         <p>На святкування</p>
         <a class="article-but" href="#">Детальніше</a>
       </article>
     </section>
 
-    <img src="https://learn.logikaschool.com/uploads/student/3144138/68ce7be564516.png" alt="Рекламне зображення" width="960" height="270">
+    <div class="promo">
+      <img src="https://learn.logikaschool.com/uploads/student/3144138/68ce7be564516.png" alt="Рекламне зображення" width="960" height="270">
+    </div>
   </main>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="social">
-      <a href="#"><img src="/uploads/2021/02/icon-set-1142000_1280%201_0_1613586391.png" alt="Facebook"></a>
-      <a href="#"><img src="/uploads/2021/02/instagram-3288419_1280%201_0_1613586391.png" alt="Instagram"></a>
+      <!-- Рекомендація: помістити ці іконки в папку /images і вказати відносний шлях -->
+      <a href="#"><img src="/uploads/2021/02/icon-set-1142000_1280%201_0_1613586391.png" alt="Facebook" /></a>
+      <a href="#"><img src="/uploads/2021/02/instagram-3288419_1280%201_0_1613586391.png" alt="Instagram" /></a>
     </div>
-    <p><b>Напиши – отримай <br> промокод!</b></p>
+    <p><b>Напиши – отримай<br>промокод!</b></p>
   </footer>
 </body>
 </html>
