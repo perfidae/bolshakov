@@ -105,26 +105,26 @@ p {
   font-weight: bold;
 }
 
-/* Секція з товарами: responsive grid */
 .info {
-  max-width: 1100px;
-  margin: 20px auto;
-  padding: 0 16px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
-  align-items: start;
+  grid-template-columns: repeat(2, 1fr); /* по 2 в рядку */
+  gap: 20px; /* відступи між картками */
+  max-width: 1000px;
+  margin: 0 auto; /* центрування */
 }
 
-/* Картки товарів */
 .Linga {
-  background-color: var(--card-bg);
-  color: var(--card-text); /* тепер текст темний щоб був видимий на білому фоні */
+  background-color: white;
   text-align: center;
-  padding: 18px;
-  border-radius: 18px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  padding: 20px;
+  border-radius: 20px;
+  color: #000; /* щоб текст був видимий */
+  height: 450px; /* фіксована висота */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
 .Linga h2 { margin: 8px 0; font-size: 20px; }
 .Linga img { max-width: 100%; height: auto; border-radius: 8px; display:block; margin: 10px auto; }
 
