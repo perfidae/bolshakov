@@ -163,7 +163,10 @@ p {
 .footer p { margin-top: 10px; font-weight:700; }
 
 /* Додаткові стилі */
-.promo { text-align:center; margin: 20px 0; }
+.promo { 
+  text-align: center; 
+  margin: 20px 0; 
+}
 
 /* Адаптивність */
 @media (max-width: 600px){
