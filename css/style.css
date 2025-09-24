@@ -125,6 +125,10 @@ p {
   justify-content: space-between;
 }
 
+main h1{
+  text-align: center;
+}
+
 .Linga h2 { margin: 8px 0; font-size: 20px; }
 .Linga img { max-width: 100%; height: auto; border-radius: 8px; display:block; margin: 10px auto; }
 
