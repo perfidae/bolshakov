@@ -129,13 +129,6 @@ main h1{
   justify-content: space-between;
 }
 
-.Linga img {
-  width: 100%; /* Розтягується на всю ширину контейнера */
-  height: 200px; /* Встановлюємо висоту для всіх картинок */
-  object-fit: cover; /* Забезпечуємо, щоб картинка не деформувалася */
-  border-radius: 10px; /* Округлені краї */
-}
-
 
 .Linga h2 { margin: 8px 0; font-size: 20px; }
 .Linga img { max-width: 100%; height: auto; border-radius: 8px; display:block; margin: 10px auto; }
