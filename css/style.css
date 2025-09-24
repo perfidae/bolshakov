@@ -27,6 +27,10 @@ p {
   margin: 0 0 10px 0;
 }
 
+main h1{
+  text-align: center;
+}
+
 /* Header */
 .header {
   background: var(--dark);
@@ -123,10 +127,6 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-main h1{
-  text-align: center;
 }
 
 .Linga h2 { margin: 8px 0; font-size: 20px; }
