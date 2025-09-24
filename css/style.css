@@ -1,37 +1,47 @@
-/* Загальні стилі */
+/* style.css - оновлений */
+
+/* Палітра */
+:root{
+  --bg: #c07745;
+  --dark: #5a2e1f;
+  --nav: #7a4a2c;
+  --accent: #f5d27d;
+  --card-bg: #ffffff;
+  --card-text: #2e2e2e;
+  --muted: #673919;
+}
+
+/* Скидання */
+*{box-sizing:border-box}
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #c07745; /* основний коричневий */
+  background-color: var(--bg);
   color: #fff;
+  line-height: 1.4;
 }
 
+/* Загальні параграфи */
 p {
-  font-size: 20px;
+  font-size: 18px;
+  margin: 0 0 10px 0;
 }
 
 /* Header */
 .header {
-  background: #5a2e1f;
+  background: var(--dark);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 12px 20px;
 }
-.logo {
-  display: flex;
-  align-items: center;
-}
-.logo-img {
-  height: 50px;
-  margin-right: 10px;
-}
-.logo-text {
-  font-size: 24px;
-  font-weight: bold;
-}
+.logo { display:flex; align-items:center; gap:12px; }
+.logo-img { height:50px; display:block; }
+.logo-text { font-size:22px; font-weight:700; color:#fff; }
+
+/* Кнопка знижок */
 .btn-discount {
-  background: #f5d27d;
+  background: var(--accent);
   color: #000;
   padding: 8px 16px;
   text-decoration: none;
@@ -43,91 +53,121 @@ p {
 .nav {
   display: flex;
   justify-content: center;
-  background: #7a4a2c;
+  background: var(--nav);
+  gap: 10px;
+  padding: 6px 0;
 }
 .nav a {
   color: #fff;
-  padding: 12px 20px;
+  padding: 10px 16px;
   text-decoration: none;
+  border-radius: 4px;
 }
 .nav a.active {
-  background: #5a2e1f;
+  background: var(--dark);
   border-radius: 6px 6px 0 0;
 }
 
 /* About Section */
 .about {
-  padding: 20px;
+  padding: 24px 16px;
   text-align: center;
 }
-.about h2 {
-  margin-bottom: 20px;
-}
+.about h1, .about h2 { margin-bottom: 16px; color:#fff; }
 .about-content {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
   align-items: center;
-  gap: 20px;
 }
 .about-content p {
-  background: #5a2e1f;
-  padding: 20px;
-  border-radius: 15px;
+  background: var(--dark);
+  padding: 16px;
+  border-radius: 12px;
+  color: #fff;
+  max-width: 520px;
   text-align: left;
 }
 .about-content img {
-  max-width: 250px;
+  max-width: 320px;
+  width: 100%;
   border-radius: 10px;
 }
 .btn-catalog {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background: #5a2e1f;
+  margin-top: 14px;
+  padding: 10px 20px;
+  background: var(--dark);
   color: #fff;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
 }
 
-/* Додаткові блоки */
+/* Секція з товарами: responsive grid */
 .info {
-  width: 870px;
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  align-items: start;
 }
+
+/* Картки товарів */
 .Linga {
-  float: left;
-  width: 400px;
-  height: 400px;
-  background-color: white;
+  background-color: var(--card-bg);
+  color: var(--card-text); /* тепер текст темний щоб був видимий на білому фоні */
   text-align: center;
-  padding: 10px;
-  margin: 40px 0px 40px 80px;
-  border-radius: 50px;
+  padding: 18px;
+  border-radius: 18px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
 }
+.Linga h2 { margin: 8px 0; font-size: 20px; }
+.Linga img { max-width: 100%; height: auto; border-radius: 8px; display:block; margin: 10px auto; }
+
+/* Кнопки в картках */
 .article-but {
-  color: rgb(245, 200, 179); 
+  display: inline-block;
+  color: var(--accent);
   text-decoration: none;
-  background-color: #673919;
-  border-radius: 50px;
-  padding: 10px 10px;
+  background-color: var(--muted);
+  border-radius: 30px;
+  padding: 8px 14px;
+  margin-top: 10px;
+  font-weight: 600;
 }
 
 /* Cookies background */
 .cookies-banner {
   background: url("https://learn.logikaschool.com/uploads/student/3144138/68ce7be564516.png") repeat-x center;
   height: 150px;
+  background-size: cover;
+  margin-top: 24px;
 }
 
 /* Footer */
 .footer {
-  background: #5a2e1f;
+  background: var(--dark);
   text-align: center;
-  padding: 20px;
+  padding: 18px;
+  color: #fff;
 }
 .footer .social a img {
-  width: 50px;
-  margin: 0 10px;
+  width: 40px;
+  margin: 0 8px;
+  vertical-align: middle;
 }
-.footer p {
-  margin-top: 10px;
+.footer p { margin-top: 10px; font-weight:700; }
+
+/* Додаткові стилі */
+.promo { text-align:center; margin: 20px 0; }
+
+/* Адаптивність */
+@media (max-width: 600px){
+  .logo-text { font-size:18px; }
+  p { font-size:16px; }
+  .about-content { flex-direction: column; }
 }
